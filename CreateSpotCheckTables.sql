@@ -36,8 +36,10 @@ CREATE TABLE tUserInfo(
 CREATE TABLE tDevice(
 	[DeviceID] [int] IDENTITY(1,1) NOT NULL,
 	[DeviceName] [varchar](100) NOT NULL,
-	[IpAddress] [varchar](100) NOT NULL,
+	[LocalIpAddress] [varchar](100) NOT NULL,
+	[ExternalIpAddress] [varchar](100) NOT NULL,
 	[MacAddress] [varchar](100) NOT NULL,
 	[LotID] [int] NOT NULL,
-	[FloorNumber] [int] NOT NULL
+	[FloorNumber] [int] NOT NULL,
+	[LastUpdateDate] [datetime] NOT NULL
 );

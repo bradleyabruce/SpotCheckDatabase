@@ -14,7 +14,7 @@ CREATE TABLE tSpot(
 	[SpotID] [int] IDENTITY(1,1) NOT NULL,
 	[FloorNum] [int] NULL,
 	[LotID] [int] NOT NULL,
-	[OpenFlag] [boolean] NOT NULL,
+	[OpenFlag] [bit] NOT NULL,
 );
 	
 CREATE TABLE tLotUsage(

@@ -39,7 +39,23 @@ CREATE TABLE tDevice(
 	[LocalIpAddress] [varchar](100) NOT NULL,
 	[ExternalIpAddress] [varchar](100) NOT NULL,
 	[MacAddress] [varchar](100) NOT NULL,
-	[LotID] [int] NOT NULL,
-	[FloorNumber] [int] NOT NULL,
-	[LastUpdateDate] [datetime] NOT NULL
+	[LotID] [int],
+	[FloorNumber] [int],
+	[LastUpdateDate] [datetime] NOT NULL,
+	[CompanyID] [int] NOT NULL
+);
+
+CREATE TABLE tCompany(
+	[CompanyID] [int] IDENTITY(1,1) NOT NULL,
+	[CompanyName] [varchar](100) NOT NULL,
+	[Address] [varchar](100) NOT NULL
+);
+
+CREATE TABLE tContact(
+	[ContactID] [int] IDENTITY(1,1) NOT NULL,
+	[FirstName] [varchar](100) NOT NULL,
+	[LastName] [varchar](100) NOT NULL,
+	[PhoneNumber] [varchar](15) NOT NULL,
+	[EmailAddress] [varchar](100) NOT NULL,
+	[CompanyID] [int] NOT NULL
 );

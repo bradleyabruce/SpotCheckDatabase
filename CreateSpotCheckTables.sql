@@ -48,7 +48,10 @@ CREATE TABLE tDevice(
 CREATE TABLE tCompany(
 	[CompanyID] [int] IDENTITY(1,1) NOT NULL,
 	[CompanyName] [varchar](100) NOT NULL,
-	[Address] [varchar](100) NOT NULL
+	[Address] [varchar](100) NOT NULL,
+	[ZipCode] [int] NOT NULL,
+	[City] [varchar](100) NOT NULL,
+	[State] [varchar](20) NOT NULL
 );
 
 CREATE TABLE tContact(

@@ -7,7 +7,9 @@ CREATE TABLE tParkingLot(
 	[LotName] [varchar](100) NOT NULL,
 	[ContactID] [int] NULL,
 	[Latitude] [decimal](9, 6) NULL,
-	[Longitude] [decimal](9, 6) NULL
+	[Longitude] [decimal](9, 6) NULL,
+	[OpenSpots] [int] NOT NULL,
+	[TotalSpots] [int] NOT NULL 
 );
 
 CREATE TABLE tSpot(

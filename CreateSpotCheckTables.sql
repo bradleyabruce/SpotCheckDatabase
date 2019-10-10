@@ -64,3 +64,6 @@ CREATE TABLE tContact(
 	[EmailAddress] [varchar](100) NOT NULL,
 	[CompanyID] [int] NOT NULL
 );
+
+ALTER TABLE tParkingLot
+ADD Coordinates geography

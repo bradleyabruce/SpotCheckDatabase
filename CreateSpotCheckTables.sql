@@ -17,6 +17,9 @@ CREATE TABLE tSpot(
 	[FloorNum] [int] NULL,
 	[LotID] [int] NOT NULL,
 	[OpenFlag] [bit] NOT NULL,
+	[DeviceID] [int],
+	[TopLeftImageCoordinate [float]],
+	[BottomRightImageCoordinate [float]]
 );
 	
 CREATE TABLE tLotUsage(

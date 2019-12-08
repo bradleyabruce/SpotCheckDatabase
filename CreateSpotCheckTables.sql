@@ -18,8 +18,11 @@ CREATE TABLE tSpot(
 	[LotID] [int] NOT NULL,
 	[OpenFlag] [bit] NOT NULL,
 	[DeviceID] [int],
-	[TopLeftImageCoordinate [float]],
-	[BottomRightImageCoordinate [float]]
+	[TopLeftXCoordinate [int]],
+	[TopLeftYCoordinate [int]],
+	[BottomRightXCoordinate [int]],
+	[BottomRightYCoordinate [int]],
+	[UpdateDate [datetime]]
 );
 	
 CREATE TABLE tLotUsage(

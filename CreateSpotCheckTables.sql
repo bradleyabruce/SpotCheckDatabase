@@ -16,7 +16,7 @@ CREATE TABLE tSpot(
 	[SpotID] [int] IDENTITY(1,1) NOT NULL,
 	[FloorNum] [int] NULL,
 	[LotID] [int] NOT NULL,
-	[OpenFlag] [bit] NOT NULL,
+	[IsOpen] [bit] NOT NULL,
 	[DeviceID] [int],
 	[TopLeftXCoordinate [int]],
 	[TopLeftYCoordinate [int]],
@@ -50,7 +50,8 @@ CREATE TABLE tDevice(
 	[LotID] [int],
 	[FloorNumber] [int],
 	[LastUpdateDate] [datetime] NOT NULL,
-	[CompanyID] [int] NOT NULL
+	[CompanyID] [int] NOT NULL,
+	[TakeNewImage] [bit] DEFAULT 0 NOT NULL
 );
 
 CREATE TABLE tCompany(

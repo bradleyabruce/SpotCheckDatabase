@@ -60,7 +60,9 @@ CREATE TABLE tCompany(
 	[Address] [varchar](100) NOT NULL,
 	[ZipCode] [int] NOT NULL,
 	[City] [varchar](100) NOT NULL,
-	[State] [varchar](20) NOT NULL
+	[State] [varchar](20) NOT NULL,
+	[CompanyUsername] [varchar](100) NOT NULL,
+	[CompanyPassword] [varchar](100) NOT NULL
 );
 
 CREATE TABLE tContact(

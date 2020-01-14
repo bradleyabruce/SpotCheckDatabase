@@ -42,8 +42,10 @@ CREATE TABLE tDevice(
 	[ExternalIpAddress] [varchar](100) NOT NULL,
 	[MacAddress] [varchar](100) NOT NULL,
 	[LastUpdateDate] [datetime] NOT NULL,
-	[CompanyID] [int] NOT NULL,
-	[TakeNewImage] [bit] DEFAULT 0 NOT NULL
+	[CompanyID] [int],
+	[TakeNewImage] [bit] DEFAULT 0 NOT NULL,
+	[IsDeployed] [bit] DEFAULT 0 NOT NULL,
+	[ParkingLotID] [int]
 );
 
 CREATE TABLE tCompany(

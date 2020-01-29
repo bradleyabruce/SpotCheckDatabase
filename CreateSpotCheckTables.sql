@@ -44,7 +44,7 @@ CREATE TABLE tDevice(
 	[LastUpdateDate] [datetime] NOT NULL,
 	[CompanyID] [int],
 	[TakeNewImage] [bit] DEFAULT 0 NOT NULL,
-	[IsDeployed] [bit] DEFAULT 0 NOT NULL,
+	[DeviceStatusID] [int] DEFAULT 1 NOT NULL,
 	[ParkingLotID] [int]
 );
 
@@ -89,6 +89,12 @@ CREATE TABLE tParkingLotCoordinates(
 	[Latitude] [decimal](9, 6) NULL,
 	[Longitude] [decimal](9, 6) NULL,
 );
+
+CREATE TABLE tDeviceStatus
+(
+	[DeviceStatusID] [int] IDENTITY(1,1),
+	[DeviceStatus] [varchar](200) NOT NULL,
+)
 
 
 ALTER TABLE tParkingLot

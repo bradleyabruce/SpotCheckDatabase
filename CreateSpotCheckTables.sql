@@ -96,6 +96,14 @@ CREATE TABLE tDeviceStatus
 	[DeviceStatus] [varchar](200) NOT NULL,
 )
 
+CREATE TABLE tDeviceImages
+(
+	[DeviceImageID] [int] IDENTITY(1,1),
+	[DeviceID] [int] NOT NULL,
+	[EncodedImageString] [VARCHAR](MAX) NOT NULL,
+	[CreatedDate] [datetime] NOT NULL
+)
+
 
 ALTER TABLE tParkingLot
 ADD Coordinates geography
